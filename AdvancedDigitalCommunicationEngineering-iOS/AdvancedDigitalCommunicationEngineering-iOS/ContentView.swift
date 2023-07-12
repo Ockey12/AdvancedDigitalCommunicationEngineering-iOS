@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  AdvancedDigitalCommunicationEngineering-iOS
-//
-//  Created by オナガ・ハルキ on 2023/07/13.
-//
-
 import SwiftUI
 
 struct ContentView: View {
