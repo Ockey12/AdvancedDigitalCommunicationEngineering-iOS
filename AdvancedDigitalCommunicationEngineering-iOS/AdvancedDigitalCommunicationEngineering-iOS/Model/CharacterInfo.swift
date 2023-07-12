@@ -1,6 +1,6 @@
 import Foundation
 
-struct CharacterResponse {
+struct CharacterInfo {
     let name: String
     let school: String
     let grade: String

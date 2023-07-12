@@ -13,7 +13,7 @@
 		AC3056642A5F087900BAC46F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC3056632A5F087900BAC46F /* Preview Assets.xcassets */; };
 		AC30566B2A5F098700BAC46F /* Secret.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC30566A2A5F098700BAC46F /* Secret.plist */; };
 		AC30566D2A5F0A0900BAC46F /* CharacterNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC30566C2A5F0A0900BAC46F /* CharacterNames.swift */; };
-		AC30566F2A5F0C7100BAC46F /* CharacterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC30566E2A5F0C7100BAC46F /* CharacterResponse.swift */; };
+		AC30566F2A5F0C7100BAC46F /* CharacterInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC30566E2A5F0C7100BAC46F /* CharacterInfo.swift */; };
 		AC3056722A5F0D9D00BAC46F /* PlistAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3056712A5F0D9D00BAC46F /* PlistAccessor.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,7 +25,7 @@
 		AC3056632A5F087900BAC46F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AC30566A2A5F098700BAC46F /* Secret.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Secret.plist; sourceTree = "<group>"; };
 		AC30566C2A5F0A0900BAC46F /* CharacterNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterNames.swift; sourceTree = "<group>"; };
-		AC30566E2A5F0C7100BAC46F /* CharacterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterResponse.swift; sourceTree = "<group>"; };
+		AC30566E2A5F0C7100BAC46F /* CharacterInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterInfo.swift; sourceTree = "<group>"; };
 		AC3056712A5F0D9D00BAC46F /* PlistAccessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistAccessor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,7 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				AC30566C2A5F0A0900BAC46F /* CharacterNames.swift */,
-				AC30566E2A5F0C7100BAC46F /* CharacterResponse.swift */,
+				AC30566E2A5F0C7100BAC46F /* CharacterInfo.swift */,
 				AC3056712A5F0D9D00BAC46F /* PlistAccessor.swift */,
 			);
 			path = Model;
@@ -161,7 +161,7 @@
 				AC30565F2A5F087400BAC46F /* ContentView.swift in Sources */,
 				AC3056722A5F0D9D00BAC46F /* PlistAccessor.swift in Sources */,
 				AC30566D2A5F0A0900BAC46F /* CharacterNames.swift in Sources */,
-				AC30566F2A5F0C7100BAC46F /* CharacterResponse.swift in Sources */,
+				AC30566F2A5F0C7100BAC46F /* CharacterInfo.swift in Sources */,
 				AC30565D2A5F087400BAC46F /* AdvancedDigitalCommunicationEngineering_iOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
