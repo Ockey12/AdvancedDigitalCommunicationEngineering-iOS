@@ -60,8 +60,7 @@
 				AC30566A2A5F098700BAC46F /* Secret.plist */,
 				AC30565C2A5F087400BAC46F /* AdvancedDigitalCommunicationEngineering_iOSApp.swift */,
 				AC30565E2A5F087400BAC46F /* ContentView.swift */,
-				AC30566C2A5F0A0900BAC46F /* CharacterNames.swift */,
-				AC30566E2A5F0C7100BAC46F /* CharacterResponse.swift */,
+				AC3056702A5F0D5300BAC46F /* Model */,
 				AC3056602A5F087900BAC46F /* Assets.xcassets */,
 				AC3056622A5F087900BAC46F /* Preview Content */,
 			);
@@ -74,6 +73,15 @@
 				AC3056632A5F087900BAC46F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AC3056702A5F0D5300BAC46F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC30566C2A5F0A0900BAC46F /* CharacterNames.swift */,
+				AC30566E2A5F0C7100BAC46F /* CharacterResponse.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
