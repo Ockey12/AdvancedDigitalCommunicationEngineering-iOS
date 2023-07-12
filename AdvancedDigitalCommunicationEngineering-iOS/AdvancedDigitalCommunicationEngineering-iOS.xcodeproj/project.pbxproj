@@ -11,6 +11,7 @@
 		AC30565F2A5F087400BAC46F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC30565E2A5F087400BAC46F /* ContentView.swift */; };
 		AC3056612A5F087900BAC46F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC3056602A5F087900BAC46F /* Assets.xcassets */; };
 		AC3056642A5F087900BAC46F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC3056632A5F087900BAC46F /* Preview Assets.xcassets */; };
+		AC30566B2A5F098700BAC46F /* Secret.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC30566A2A5F098700BAC46F /* Secret.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		AC30565E2A5F087400BAC46F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AC3056602A5F087900BAC46F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC3056632A5F087900BAC46F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AC30566A2A5F098700BAC46F /* Secret.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Secret.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				AC30565C2A5F087400BAC46F /* AdvancedDigitalCommunicationEngineering_iOSApp.swift */,
+				AC30566A2A5F098700BAC46F /* Secret.plist */,
 				AC30565E2A5F087400BAC46F /* ContentView.swift */,
 				AC3056602A5F087900BAC46F /* Assets.xcassets */,
 				AC3056622A5F087900BAC46F /* Preview Content */,
@@ -125,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC30566B2A5F098700BAC46F /* Secret.plist in Resources */,
 				AC3056642A5F087900BAC46F /* Preview Assets.xcassets in Resources */,
 				AC3056612A5F087900BAC46F /* Assets.xcassets in Resources */,
 			);
