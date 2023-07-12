@@ -12,6 +12,7 @@
 		AC3056612A5F087900BAC46F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC3056602A5F087900BAC46F /* Assets.xcassets */; };
 		AC3056642A5F087900BAC46F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC3056632A5F087900BAC46F /* Preview Assets.xcassets */; };
 		AC30566B2A5F098700BAC46F /* Secret.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC30566A2A5F098700BAC46F /* Secret.plist */; };
+		AC30566D2A5F0A0900BAC46F /* CharacterNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC30566C2A5F0A0900BAC46F /* CharacterNames.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		AC3056602A5F087900BAC46F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC3056632A5F087900BAC46F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AC30566A2A5F098700BAC46F /* Secret.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Secret.plist; sourceTree = "<group>"; };
+		AC30566C2A5F0A0900BAC46F /* CharacterNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterNames.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,9 +55,10 @@
 		AC30565B2A5F087400BAC46F /* AdvancedDigitalCommunicationEngineering-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				AC30565C2A5F087400BAC46F /* AdvancedDigitalCommunicationEngineering_iOSApp.swift */,
 				AC30566A2A5F098700BAC46F /* Secret.plist */,
+				AC30565C2A5F087400BAC46F /* AdvancedDigitalCommunicationEngineering_iOSApp.swift */,
 				AC30565E2A5F087400BAC46F /* ContentView.swift */,
+				AC30566C2A5F0A0900BAC46F /* CharacterNames.swift */,
 				AC3056602A5F087900BAC46F /* Assets.xcassets */,
 				AC3056622A5F087900BAC46F /* Preview Content */,
 			);
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC30565F2A5F087400BAC46F /* ContentView.swift in Sources */,
+				AC30566D2A5F0A0900BAC46F /* CharacterNames.swift in Sources */,
 				AC30565D2A5F087400BAC46F /* AdvancedDigitalCommunicationEngineering_iOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
