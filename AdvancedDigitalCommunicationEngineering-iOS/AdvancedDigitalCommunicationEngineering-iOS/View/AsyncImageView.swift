@@ -13,7 +13,6 @@ struct AsyncImageView: View {
                     .scaledToFit()
             } else if imageLoader.isLoading {
                 ProgressView()
-                    .progressViewStyle(CircularProgressViewStyle(tint: Color("ConceptColor")))
             } else {
                 Image(systemName: "photo")
             }
