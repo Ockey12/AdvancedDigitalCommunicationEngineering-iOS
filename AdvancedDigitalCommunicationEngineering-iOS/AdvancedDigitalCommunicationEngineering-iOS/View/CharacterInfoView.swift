@@ -4,6 +4,7 @@ struct CharacterInfoView: View {
     var characterInfo: CharacterInfo
     var body: some View {
         VStack {
+            AsyncImageView(url: characterInfo.imageURL)
             Text(characterInfo.name)
             Text(characterInfo.school)
             Text(characterInfo.grade)

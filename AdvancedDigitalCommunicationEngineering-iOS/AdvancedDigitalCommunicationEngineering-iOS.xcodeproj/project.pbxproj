@@ -24,6 +24,7 @@
 		AC5261BF2A5FDFC1004CAD0D /* CharacterLocalInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5261BE2A5FDFC1004CAD0D /* CharacterLocalInfo.swift */; };
 		AC5261C12A6016ED004CAD0D /* CharacterInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5261C02A6016ED004CAD0D /* CharacterInfoView.swift */; };
 		AC5261C52A602BE5004CAD0D /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5261C42A602BE5004CAD0D /* ImageLoader.swift */; };
+		AC5261C72A602C30004CAD0D /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5261C62A602C30004CAD0D /* AsyncImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		AC5261BE2A5FDFC1004CAD0D /* CharacterLocalInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterLocalInfo.swift; sourceTree = "<group>"; };
 		AC5261C02A6016ED004CAD0D /* CharacterInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterInfoView.swift; sourceTree = "<group>"; };
 		AC5261C42A602BE5004CAD0D /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		AC5261C62A602C30004CAD0D /* AsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 				AC5261BA2A5FD8CE004CAD0D /* CharacterNameRowView.swift */,
 				AC5261BC2A5FDF49004CAD0D /* CharacterNameListView.swift */,
 				AC5261C02A6016ED004CAD0D /* CharacterInfoView.swift */,
+				AC5261C62A602C30004CAD0D /* AsyncImageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 				AC5261BB2A5FD8CE004CAD0D /* CharacterNameRowView.swift in Sources */,
 				AC3056722A5F0D9D00BAC46F /* PlistAccessor.swift in Sources */,
 				AC3056792A5FC7A700BAC46F /* ApiViewModel.swift in Sources */,
+				AC5261C72A602C30004CAD0D /* AsyncImageView.swift in Sources */,
 				AC30566D2A5F0A0900BAC46F /* CharacterNames.swift in Sources */,
 				AC5261BF2A5FDFC1004CAD0D /* CharacterLocalInfo.swift in Sources */,
 				AC30567C2A5FCEE400BAC46F /* ApiViewModelTestView.swift in Sources */,

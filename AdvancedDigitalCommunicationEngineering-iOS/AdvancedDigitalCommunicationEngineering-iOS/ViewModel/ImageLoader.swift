@@ -1,7 +1,7 @@
 import Foundation
 import SwiftUI
 
-class ImageLoader {
+class ImageLoader: ObservableObject {
     @Published var image: UIImage?
     @Published var isLoading = false
 
