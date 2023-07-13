@@ -1,20 +1,26 @@
 import Foundation
 
 @MainActor
-class ApiViewModel {
+class ApiViewModel: ObservableObject {
     @Published private(set) var characterInfo: CharacterInfo
 
     init() {
         characterInfo = CharacterInfo()
     }
 
-    func requestCharacterInfo(about name: String) async {
+    func requestCharacterInfo(about name: String) async -> CharacterInfo {
         do {
             let requester = ApiRequester()
             let info = try await requester.requestCharacterInfo(about: name)
-            characterInfo = info
+            return info
         } catch {
             fatalError(error.localizedDescription)
+        }
+    }
+
+    func didTapListItem(about name: String) {
+        Task {
+            characterInfo = await requestCharacterInfo(about: name)
         }
     }
 }

@@ -4,14 +4,13 @@ struct ApiRequester {
     func requestCharacterInfo(about name: String) async throws -> CharacterInfo {
         let ipAddress = PlistAccessor.serverIpAddress
 
-        var components = URLComponents()
-        components.scheme = "http"
-        components.host = ipAddress
-        components.path = "/get_image/" + name
-
-        guard let url = components.url else {
+        var urlString = "http://" + ipAddress + ":8000" + "/get_profile/" + name
+        guard let url = URL(string: urlString) else {
             throw ApiError.invalidURL
         }
+        print("--- URL ---")
+        print(url)
+        print("")
 
         let (responseData, _) = try await URLSession.shared.data(from: url)
 
