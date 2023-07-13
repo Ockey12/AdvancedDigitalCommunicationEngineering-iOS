@@ -7,10 +7,14 @@ struct CharacterNameRowView: View {
     var body: some View {
         HStack {
             Circle()
-                .frame(width: 50, height: 50)
+                .frame(width: 30, height: 30)
                 .foregroundColor(color)
             Text(name)
-                .font(.system(size: 50))
+                .font(.system(size: 30))
+                .foregroundColor(.black)
+            Spacer()
+
+            Image(systemName: "chevron.right")
         }
         .frame(height: 100)
     }

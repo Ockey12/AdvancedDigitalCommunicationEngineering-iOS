@@ -4,7 +4,7 @@ struct ApiRequester {
     func requestCharacterInfo(about name: String) async throws -> CharacterInfo {
         let ipAddress = PlistAccessor.serverIpAddress
 
-        var urlString = "http://" + ipAddress + ":8000" + "/get_profile/" + name
+        let urlString = "http://" + ipAddress + ":8000" + "/get_profile/" + name
         guard let url = URL(string: urlString) else {
             throw ApiError.invalidURL
         }
