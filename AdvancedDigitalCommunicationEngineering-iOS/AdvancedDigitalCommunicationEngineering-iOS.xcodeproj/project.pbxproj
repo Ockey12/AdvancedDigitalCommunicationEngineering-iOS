@@ -22,6 +22,7 @@
 		AC5261BB2A5FD8CE004CAD0D /* CharacterNameRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5261BA2A5FD8CE004CAD0D /* CharacterNameRowView.swift */; };
 		AC5261BD2A5FDF49004CAD0D /* CharacterNameListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5261BC2A5FDF49004CAD0D /* CharacterNameListView.swift */; };
 		AC5261BF2A5FDFC1004CAD0D /* CharacterLocalInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5261BE2A5FDFC1004CAD0D /* CharacterLocalInfo.swift */; };
+		AC5261C12A6016ED004CAD0D /* CharacterInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5261C02A6016ED004CAD0D /* CharacterInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		AC5261BA2A5FD8CE004CAD0D /* CharacterNameRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterNameRowView.swift; sourceTree = "<group>"; };
 		AC5261BC2A5FDF49004CAD0D /* CharacterNameListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterNameListView.swift; sourceTree = "<group>"; };
 		AC5261BE2A5FDFC1004CAD0D /* CharacterLocalInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterLocalInfo.swift; sourceTree = "<group>"; };
+		AC5261C02A6016ED004CAD0D /* CharacterInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				AC30567B2A5FCEE400BAC46F /* ApiViewModelTestView.swift */,
 				AC5261BA2A5FD8CE004CAD0D /* CharacterNameRowView.swift */,
 				AC5261BC2A5FDF49004CAD0D /* CharacterNameListView.swift */,
+				AC5261C02A6016ED004CAD0D /* CharacterInfoView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC3056762A5F12EB00BAC46F /* ApiError.swift in Sources */,
+				AC5261C12A6016ED004CAD0D /* CharacterInfoView.swift in Sources */,
 				AC5261BD2A5FDF49004CAD0D /* CharacterNameListView.swift in Sources */,
 				AC30565F2A5F087400BAC46F /* ContentView.swift in Sources */,
 				AC5261BB2A5FD8CE004CAD0D /* CharacterNameRowView.swift in Sources */,
