@@ -19,6 +19,7 @@
 		AC3056762A5F12EB00BAC46F /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3056752A5F12EB00BAC46F /* ApiError.swift */; };
 		AC3056792A5FC7A700BAC46F /* ApiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3056782A5FC7A700BAC46F /* ApiViewModel.swift */; };
 		AC30567C2A5FCEE400BAC46F /* ApiViewModelTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC30567B2A5FCEE400BAC46F /* ApiViewModelTestView.swift */; };
+		AC5261BB2A5FD8CE004CAD0D /* CharacterNameRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5261BA2A5FD8CE004CAD0D /* CharacterNameRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		AC3056752A5F12EB00BAC46F /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
 		AC3056782A5FC7A700BAC46F /* ApiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiViewModel.swift; sourceTree = "<group>"; };
 		AC30567B2A5FCEE400BAC46F /* ApiViewModelTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiViewModelTestView.swift; sourceTree = "<group>"; };
+		AC5261BA2A5FD8CE004CAD0D /* CharacterNameRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterNameRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				AC30567B2A5FCEE400BAC46F /* ApiViewModelTestView.swift */,
+				AC5261BA2A5FD8CE004CAD0D /* CharacterNameRowView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 			files = (
 				AC3056762A5F12EB00BAC46F /* ApiError.swift in Sources */,
 				AC30565F2A5F087400BAC46F /* ContentView.swift in Sources */,
+				AC5261BB2A5FD8CE004CAD0D /* CharacterNameRowView.swift in Sources */,
 				AC3056722A5F0D9D00BAC46F /* PlistAccessor.swift in Sources */,
 				AC3056792A5FC7A700BAC46F /* ApiViewModel.swift in Sources */,
 				AC30566D2A5F0A0900BAC46F /* CharacterNames.swift in Sources */,
