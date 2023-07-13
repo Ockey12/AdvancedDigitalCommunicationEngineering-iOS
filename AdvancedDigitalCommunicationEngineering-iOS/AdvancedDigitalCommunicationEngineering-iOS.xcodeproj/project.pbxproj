@@ -17,6 +17,7 @@
 		AC3056722A5F0D9D00BAC46F /* PlistAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3056712A5F0D9D00BAC46F /* PlistAccessor.swift */; };
 		AC3056742A5F119000BAC46F /* ApiRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3056732A5F119000BAC46F /* ApiRequester.swift */; };
 		AC3056762A5F12EB00BAC46F /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3056752A5F12EB00BAC46F /* ApiError.swift */; };
+		AC3056792A5FC7A700BAC46F /* ApiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3056782A5FC7A700BAC46F /* ApiViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		AC3056712A5F0D9D00BAC46F /* PlistAccessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistAccessor.swift; sourceTree = "<group>"; };
 		AC3056732A5F119000BAC46F /* ApiRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequester.swift; sourceTree = "<group>"; };
 		AC3056752A5F12EB00BAC46F /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		AC3056782A5FC7A700BAC46F /* ApiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				AC30565C2A5F087400BAC46F /* AdvancedDigitalCommunicationEngineering_iOSApp.swift */,
 				AC30565E2A5F087400BAC46F /* ContentView.swift */,
 				AC3056702A5F0D5300BAC46F /* Model */,
+				AC3056772A5FC78900BAC46F /* ViewModel */,
 				AC3056602A5F087900BAC46F /* Assets.xcassets */,
 				AC3056622A5F087900BAC46F /* Preview Content */,
 			);
@@ -91,6 +94,14 @@
 				AC3056752A5F12EB00BAC46F /* ApiError.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		AC3056772A5FC78900BAC46F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AC3056782A5FC7A700BAC46F /* ApiViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +178,7 @@
 				AC3056762A5F12EB00BAC46F /* ApiError.swift in Sources */,
 				AC30565F2A5F087400BAC46F /* ContentView.swift in Sources */,
 				AC3056722A5F0D9D00BAC46F /* PlistAccessor.swift in Sources */,
+				AC3056792A5FC7A700BAC46F /* ApiViewModel.swift in Sources */,
 				AC30566D2A5F0A0900BAC46F /* CharacterNames.swift in Sources */,
 				AC30566F2A5F0C7100BAC46F /* CharacterInfo.swift in Sources */,
 				AC30565D2A5F087400BAC46F /* AdvancedDigitalCommunicationEngineering_iOSApp.swift in Sources */,
