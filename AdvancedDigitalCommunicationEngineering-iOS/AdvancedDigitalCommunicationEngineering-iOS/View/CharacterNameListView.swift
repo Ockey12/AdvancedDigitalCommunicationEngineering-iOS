@@ -19,6 +19,9 @@ struct CharacterNameListView: View {
                     }
                 }
             }
+            .navigationDestination(isPresented: $viewModel.isReady) {
+                CharacterInfoView(characterInfo: viewModel.characterInfo)
+            }
         }
     }
 }

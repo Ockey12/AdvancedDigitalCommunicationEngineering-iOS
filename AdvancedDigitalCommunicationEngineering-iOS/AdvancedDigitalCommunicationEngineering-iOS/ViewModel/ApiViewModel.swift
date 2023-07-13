@@ -3,6 +3,7 @@ import Foundation
 @MainActor
 class ApiViewModel: ObservableObject {
     @Published private(set) var characterInfo: CharacterInfo
+    @Published var isReady = false
 
     init() {
         characterInfo = CharacterInfo()
@@ -20,7 +21,15 @@ class ApiViewModel: ObservableObject {
 
     func didTapListItem(about name: String) {
         Task {
+            await MainActor.run {
+                isReady = false
+            }
+
             characterInfo = await requestCharacterInfo(about: name)
+
+            await MainActor.run {
+                isReady = true
+            }
         }
     }
 }
