@@ -6,6 +6,26 @@ struct CharacterInfoView: View {
     var body: some View {
         GeometryReader { geometry in
             ZStack {
+                HStack {
+                    Text(characterInfo.role)
+                    .bold()
+                    .offset(x: 60, y: 0)
+                    Spacer()
+                }
+                .foregroundColor(Color(hexString: characterInfo.fontColor))
+                .frame(width: 500, height: 75)
+                .background(Color(hexString: characterInfo.backgroundColor))
+                .rotationEffect(Angle(degrees: -20))
+                // アニメーションのための初期位置
+                .offset(x: self.appearAnimation ? 0 : -3*geometry.size.width,
+                        y: self.appearAnimation ? 0 : geometry.size.height)
+                .onAppear() {
+                    withAnimation(.easeInOut(duration: 1.0)) {
+                        self.appearAnimation = true
+                    }
+                }
+                .position(x: geometry.size.width/2, y: geometry.size.height-130)
+
                 AsyncImageView(url: characterInfo.imageURL)
 
                 HStack {
@@ -55,7 +75,7 @@ struct CharacterInfoView: View {
 
 
                 VStack {
-                    Text(characterInfo.role)
+
                     Text(characterInfo.comment)
                     Spacer()
                 }
@@ -69,7 +89,7 @@ struct CharacterInfoView_Previews: PreviewProvider {
     static var characterInfo = CharacterInfo(name: "後藤 ひとり",
                                              school: "秀華高校",
                                              grade: "1年生",
-                                             role: "リードギター・作詞",
+                                             role: "作詞\nリードギター",
                                              voice: "青山吉能",
                                              comment: "絶対いやだ！働きたくない！！怖い！社会が怖い！！",
                                              imageURL: URL(string: "http://\(PlistAccessor.serverIpAddress):8000/static/guiter_hero.jpg")!
