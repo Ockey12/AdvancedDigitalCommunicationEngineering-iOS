@@ -7,6 +7,30 @@ struct CharacterInfoView: View {
         GeometryReader { geometry in
             ZStack {
                 AsyncImageView(url: characterInfo.imageURL)
+
+                HStack {
+                    Spacer()
+                    VStack {
+                        Text(characterInfo.school)
+                        Text(characterInfo.grade)
+                    }
+                    .bold()
+                    .offset(x: -60, y: 0)
+                }
+                .foregroundColor(Color(hexString: characterInfo.fontColor))
+                .frame(width: 500, height: 75)
+                .background(Color(hexString: characterInfo.backgroundColor))
+                .rotationEffect(Angle(degrees: 15))
+                // アニメーションのための初期位置
+                .offset(x: self.appearAnimation ? 0 : -3*geometry.size.width,
+                        y: self.appearAnimation ? 0 : -geometry.size.height)
+                .onAppear() {
+                    withAnimation(.easeInOut(duration: 1.0)) {
+                        self.appearAnimation = true
+                    }
+                }
+                .position(x: geometry.size.width/2, y: 180)
+
                 VStack {
                     Text(characterInfo.name)
                         .font(.system(size: 70))
@@ -19,17 +43,18 @@ struct CharacterInfoView: View {
                 .background(Color(hexString: characterInfo.backgroundColor))
                 .rotationEffect(Angle(degrees: -15))
                 // アニメーションのための初期位置
-                .offset(x: self.appearAnimation ? 0 : geometry.size.width,
+                .offset(x: self.appearAnimation ? 0 : 3*geometry.size.width,
                         y: self.appearAnimation ? 0 : -geometry.size.height)
                 .onAppear() {
                     withAnimation(.easeInOut(duration: 1.0)) {
                         self.appearAnimation = true
                     }
                 }
-                .position(x: geometry.size.width/2, y: 140)
+                .position(x: geometry.size.width/2, y: 145)
+
+
 
                 VStack {
-                    Text(characterInfo.school + " " + characterInfo.grade)
                     Text(characterInfo.role)
                     Text(characterInfo.comment)
                     Spacer()
