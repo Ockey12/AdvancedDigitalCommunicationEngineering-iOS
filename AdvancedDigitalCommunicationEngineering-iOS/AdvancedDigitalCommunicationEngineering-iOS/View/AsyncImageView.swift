@@ -11,10 +11,13 @@ struct AsyncImageView: View {
                 Image(uiImage: image)
                     .resizable()
                     .scaledToFit()
-            } else if imageLoader.isLoading {
-                ProgressView()
+                //            } else if imageLoader.isLoading {
+                //                ProgressView()
+                //            } else {
+                //                Image(systemName: "photo")
+                //            }
             } else {
-                Image(systemName: "photo")
+                Image("DefaultIcon")
             }
         }
         .onAppear {
