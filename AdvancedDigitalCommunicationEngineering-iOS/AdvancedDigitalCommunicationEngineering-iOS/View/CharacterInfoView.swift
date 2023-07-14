@@ -1,22 +1,31 @@
 import SwiftUI
 
 struct CharacterInfoView: View {
+    @State private var appearAnimation = false
     var characterInfo: CharacterInfo
     var body: some View {
         GeometryReader { geometry in
             ZStack {
                 AsyncImageView(url: characterInfo.imageURL)
-//                    .scaledToFill()
                 VStack {
                     Text(characterInfo.name)
                         .font(.system(size: 70))
                         .bold()
                     Text("CV: " + characterInfo.voice)
+                        .bold()
                 }
                 .foregroundColor(Color(hexString: characterInfo.fontColor))
-                .frame(width: 1000)
+                .frame(width: 1000, height: 130)
                 .background(Color(hexString: characterInfo.backgroundColor))
                 .rotationEffect(Angle(degrees: -15))
+                // アニメーションのための初期位置
+                .offset(x: self.appearAnimation ? 0 : geometry.size.width,
+                        y: self.appearAnimation ? 0 : -geometry.size.height)
+                .onAppear() {
+                    withAnimation(.easeInOut(duration: 1.0)) {
+                        self.appearAnimation = true
+                    }
+                }
                 .position(x: geometry.size.width/2, y: 140)
 
                 VStack {
