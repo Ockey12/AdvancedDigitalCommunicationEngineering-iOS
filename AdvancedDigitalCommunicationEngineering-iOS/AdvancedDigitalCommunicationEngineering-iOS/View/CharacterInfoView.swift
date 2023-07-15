@@ -7,6 +7,27 @@ struct CharacterInfoView: View {
         GeometryReader { geometry in
             ZStack {
                 HStack {
+                    Spacer()
+                    Text(characterInfo.comment)
+                        .font(.system(size: 23))
+                        .bold()
+                        .offset(x: -50, y: 0)
+                }
+                .foregroundColor(Color(hexString: characterInfo.fontColor))
+                .frame(width: 500, height: 200)
+                .background(Color(hexString: characterInfo.backgroundColor))
+                .rotationEffect(Angle(degrees: 20))
+                // アニメーションのための初期位置
+                .offset(x: self.appearAnimation ? 0 : -3*geometry.size.width,
+                        y: self.appearAnimation ? 0 : -geometry.size.height)
+                .onAppear() {
+                    withAnimation(.easeInOut(duration: 1.0)) {
+                        self.appearAnimation = true
+                    }
+                }
+                .position(x: geometry.size.width/2, y: geometry.size.height-20)
+
+                HStack {
                     Text(characterInfo.role)
                     .bold()
                     .offset(x: 60, y: 0)
@@ -17,8 +38,8 @@ struct CharacterInfoView: View {
                 .background(Color(hexString: characterInfo.backgroundColor))
                 .rotationEffect(Angle(degrees: -20))
                 // アニメーションのための初期位置
-                .offset(x: self.appearAnimation ? 0 : -3*geometry.size.width,
-                        y: self.appearAnimation ? 0 : geometry.size.height)
+                .offset(x: self.appearAnimation ? 0 : 3*geometry.size.width,
+                        y: self.appearAnimation ? 0 : -geometry.size.height)
                 .onAppear() {
                     withAnimation(.easeInOut(duration: 1.0)) {
                         self.appearAnimation = true
@@ -71,14 +92,6 @@ struct CharacterInfoView: View {
                     }
                 }
                 .position(x: geometry.size.width/2, y: 145)
-
-
-
-                VStack {
-
-                    Text(characterInfo.comment)
-                    Spacer()
-                }
             }
             .ignoresSafeArea(edges: [.top])
         }
@@ -91,7 +104,7 @@ struct CharacterInfoView_Previews: PreviewProvider {
                                              grade: "1年生",
                                              role: "作詞\nリードギター",
                                              voice: "青山吉能",
-                                             comment: "絶対いやだ！働きたくない！！怖い！社会が怖い！！",
+                                             comment: "絶対いやだ！\n働きたくない！！\n怖い！\n社会が怖い！！",
                                              imageURL: URL(string: "http://\(PlistAccessor.serverIpAddress):8000/static/guiter_hero.jpg")!
     )
     static var previews: some View {
